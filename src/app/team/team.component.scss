@@ -14,6 +14,13 @@ h1{
     margin: auto;
     font-size: 20px;
     text-align: justify;
+    box-sizing: border-box;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        &{
+            width: 100%;
+            padding: 10px;
+        }
+    }
 
     p{
         line-height: 32px;
@@ -21,5 +28,13 @@ h1{
         text-indent: 20px;
         margin-top: 20px;
         margin-bottom: 40px;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            &{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
     }
+    
 }

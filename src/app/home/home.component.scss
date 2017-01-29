@@ -28,6 +28,16 @@
         p{
             margin: 10px 0;
         }
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            &{
+                width: 65%;
+                font-size: 20px;
+                margin-right: 3%;
+                text-align: justify;
+            }
+        
+        }
     }
 }
 
@@ -60,6 +70,18 @@
             font-size: 16px;
             text-align: center;
             text-indent: 20px;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        &{
+            padding: 10px;
+            flex-wrap: wrap;
+
+            md-card{
+                margin: 10px;
+                width: 100%;
+            }
         }
     }
 }

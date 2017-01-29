@@ -2,24 +2,33 @@
   <div routerLink="/home" class="title">
     MTL Inspire
   </div>
-  
   <div class="filler"></div>
-
   <!--<button md-button routerLink="/contact" routerLinkActive="active">Events</button>-->
   <button md-button routerLink="/home" routerLinkActive="active">Accueil</button>
   <button md-button routerLink="/team" routerLinkActive="active">L'équipe</button>
   <button md-button routerLink="/about" routerLinkActive="active">Le projet</button>
   <button md-button routerLink="/contact" routerLinkActive="active">Contact</button>
+
+  <button class="toggleMenu" md-button [mdMenuTriggerFor]="menu" ><md-icon>more_vert</md-icon></button>
+
+  <!-- Mobile nav -->
+  <md-menu #menu="mdMenu">
+      <button md-menu-item routerLink="/home" routerLinkActive="active">Accueil</button>
+      <button md-menu-item routerLink="/team" routerLinkActive="active">L'équipe</button>
+      <button md-menu-item routerLink="/about" routerLinkActive="active">Le projet</button>
+      <button md-menu-item routerLink="/contact" routerLinkActive="active">Contact</button>
+  </md-menu>
+
 </md-toolbar>
 
 <div id="main-content">
   <router-outlet></router-outlet>
-
   <footer id="contact">
     <h1>Contact</h1>
     <ul>
       <li>
-        <div><md-icon>phone</md-icon> <span>+1 438 399-2846</span></div>
+        <div>
+          <md-icon>phone</md-icon> <span>+1 438 399-2846</span></div>
       </li>
       <li>
         <md-icon>email</md-icon> <a href="mailto:info@mtlinspire">info@mtlinspire.org</a>

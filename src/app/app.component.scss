@@ -15,6 +15,21 @@ md-toolbar{
         display: flex;
         cursor: pointer;
     }
+
+    .toggleMenu{
+        display: none;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        button{
+            display: none;
+        }
+
+        .toggleMenu{
+            display: block;
+            width: auto;
+        }
+    }
 }
 
 #main-content{
