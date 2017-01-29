@@ -1,0 +1,65 @@
+.hero{
+    min-height: 500px;
+    max-height: 100%;
+    background: #0277BD;
+    margin: 0;
+    display: flex;
+    color: white;
+    background-image: url('/assets/superhero.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .description{
+        box-sizing: border-box;
+        align-self: center;
+        padding: 20px;
+        font-size: 24px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        width: 40%;
+        color: #333;
+        box-shadow: 0 0px 10px rgba(0,0,0,0.3);
+        margin-right: 10%;
+
+        h2{
+            margin: 10px 0;
+        }
+
+        p{
+            margin: 10px 0;
+        }
+    }
+}
+
+.filler{
+    text-align: center;
+    align-self: center;
+    md-icon{
+        font-size: 370px;
+        margin-left: -500px;
+    }
+}
+
+.values{
+    display: flex;
+    padding: 100px;
+
+    md-card{
+        flex-grow: 1;
+        margin: 40px;
+        text-align: center;
+        background: white;
+        color: #333;
+
+        md-icon{
+            font-size: 120px;
+            margin-left: -90px;
+        }
+
+        p{
+            font-size: 16px;
+            text-align: center;
+            text-indent: 20px;
+        }
+    }
+}

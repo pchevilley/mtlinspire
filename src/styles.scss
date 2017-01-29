@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import './theme.scss';
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+    background: #fdfdfd;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.filler{
+    flex-grow: 1;
+}
+
+app-root{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}

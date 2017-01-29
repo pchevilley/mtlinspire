@@ -1,0 +1,70 @@
+md-toolbar{
+    display: flex;
+    padding: 0;
+
+    button{ 
+        height: 100%;
+
+        &.active{
+            background: darken(#03a9f4, 10%);
+        }
+    }
+
+    .title{
+        margin-left: 20px;
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+#main-content{
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer#contact{
+    height: 300px;
+    background: #03a9f4;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+    color: white;
+    padding: 20px;
+    font-weight: 100;
+
+    a,
+    a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        color: #eee;
+        text-decoration: none;
+    }
+
+    a:active{
+        color: #ddd;
+    }
+
+    h1{
+        font-weight: 200;
+        font-size: 45px;
+        margin: 10px 0;
+    }
+
+    .social{
+        color: white;
+        a{
+            margin: 2px;
+
+            i{
+                font-size: 45px;
+            }
+        }
+        
+    }
+}
+

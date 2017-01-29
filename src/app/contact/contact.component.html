@@ -1,0 +1,20 @@
+<md-card *ngIf="!mailSent">
+  <h1>Ecrivez nous!</h1>
+
+  <form (ngSubmit)="sendMail()" #registerForm="ngForm">
+      <md-input type="text" name="name" required placeholder="Nom" [(ngModel)]="mail.name"></md-input>
+      <md-input type="email" required name="email" placeholder="Courriel" [(ngModel)]="mail.email"></md-input>
+      <md-input type="text" name="object" placeholder="Objet" [(ngModel)]="mail.object"></md-input>
+
+      <md-textarea name="body" required placeholder="Message" rows="10" [(ngModel)]="mail.body"></md-textarea>
+
+      <button class="register" md-raised-button color="primary"  type="submit" [disabled]="!registerForm.form.valid">
+        Envoyer
+        <md-icon>send</md-icon>
+      </button>
+  </form>
+</md-card>
+
+<md-card *ngIf="mailSent">
+  <h2>Merci d'avoir communiqué avec nous, nous vous répondrons prochainement.</h2>
+</md-card>
