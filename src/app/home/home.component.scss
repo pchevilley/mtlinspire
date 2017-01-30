@@ -52,13 +52,11 @@
 
 .values{
     display: flex;
-    padding: 100px;
-    flex-wrap: wrap;
-    
+    padding: 2%;
 
     md-card{
         flex-grow: 1;
-        margin: 40px;
+        margin: 2%;
         text-align: center;
         background: white;
         color: #333;
@@ -78,6 +76,7 @@
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         &{
             padding: 10px;
+            flex-wrap: wrap;
 
             md-card{
                 margin: 10px;
